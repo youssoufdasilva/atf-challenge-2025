@@ -34,19 +34,19 @@ export default function drawerDemo() {
             <ul className="mt-7 text-left">
               {siteConfig.header.map((item, index) => (
                 <li key={index} className="my-3">
-                  {item.trigger ? (
+                  {/* {item.trigger ? (
                     <span className="font-semibold">{item.trigger}</span>
-                  ) : (
-                    <Link href={item.href || ""} className="font-semibold">
-                      {item.label}
-                    </Link>
-                  )}
+                  ) : ( */}
+                  <Link href={item.href || ""} className="font-semibold">
+                    {item.label}
+                  </Link>
+                  {/* )} */}
                 </li>
               ))}
             </ul>
           </nav>
         </DrawerHeader>
-        <DrawerFooter>
+        {/* <DrawerFooter>
           <Link
             href="/login"
             className={buttonVariants({ variant: "outline" })}
@@ -63,7 +63,7 @@ export default function drawerDemo() {
             <Icons.logo className="h-6 w-6" />
             Get Started for Free
           </Link>
-        </DrawerFooter>
+        </DrawerFooter> */}
       </DrawerContent>
     </Drawer>
   );

@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header
       className={
-        "relative sticky top-0 z-50 py-2 bg-background/60 backdrop-blur"
+        "relative= sticky top-0 z-50 py-2 bg-background/60 backdrop-blur"
       }
     >
       <div className="flex justify-between items-center container">
@@ -53,7 +53,7 @@ export default function Header() {
               <Menu />
             </nav>
 
-            <div className="gap-2 flex hidden">
+            <div className="gap-2 flex= hidden">
               <Link
                 href="/login"
                 className={buttonVariants({ variant: "outline" })}
@@ -77,10 +77,10 @@ export default function Header() {
           <Drawer />
         </div>
       </div>
-      <hr
+      <div
         className={cn(
-          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out",
-          addBorder ? "opacity-100" : "opacity-0"
+          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out bg-primary== bg-yellow-900 h-[2px] ",
+          addBorder ? "opacity-25" : "opacity-0"
         )}
       />
     </header>

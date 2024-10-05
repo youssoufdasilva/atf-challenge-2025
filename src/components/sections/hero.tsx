@@ -2,33 +2,36 @@
 
 import { motion } from "framer-motion";
 
-import { Icons } from "@/components/icons";
-import HeroVideoDialog from "@/components/magicui/hero-video";
+// import { Icons } from "@/components/icons";
+import FlickeringGrid from "@/components/magicui/flickering-grid";
+// import HeroVideoDialog from "@/components/magicui/hero-video";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 const ease = [0.16, 1, 0.3, 1];
 
 function HeroPill() {
   return (
     <motion.a
-      href="/blog/introducing-acme-ai"
+      // href="/blog/introducing-acme-ai"
       className="flex w-auto items-center space-x-2 rounded-full bg-primary/20 px-2 py-1 ring-1 ring-accent whitespace-pre"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease }}
     >
       <div className="w-fit rounded-full bg-accent px-2 py-0.5 text-center text-xs font-medium text-primary sm:text-sm">
-        📣 Announcement
+        📣 Introducing New
       </div>
-      <p className="text-xs font-medium text-primary sm:text-sm">
-        Introducing 2025
-      </p>
+      <span className="text-xs font-medium text-primary sm:text-sm">
+        <span className="font-bold">2025</span>{" "}
+        <span className="font-normal">Challenge</span>
+      </span>
       <svg
         width="12"
         height="12"
-        className="ml-1"
+        className="ml-1 hidden"
         viewBox="0 0 12 12"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +47,7 @@ function HeroPill() {
 
 function HeroTitles() {
   return (
-    <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
+    <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-6">
       <motion.h1
         className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl"
         initial={{ filter: "blur(10px)", opacity: 0, y: 50 }}
@@ -55,7 +58,8 @@ function HeroTitles() {
           staggerChildren: 0.2,
         }}
       >
-        {["ATF", "AI", "Challenge", "2025"].map((text, index) => (
+        {/* {["ATF", "AI", "Challenge", "2025"].map((text, index) => ( */}
+        {["ATF", "AI", "Challenge"].map((text, index) => (
           <motion.span
             key={index}
             className="inline-block px-1 md:px-2 text-balance font-semibold"
@@ -81,7 +85,10 @@ function HeroTitles() {
           ease,
         }}
       >
-        Harnessing AI for Africa's Development.
+        Theme:{" "}
+        <span className="font-medium italic">
+          Harnessing AI for Africa's Development
+        </span>
       </motion.p>
     </div>
   );
@@ -97,7 +104,7 @@ function HeroCTA() {
         transition={{ delay: 0.8, duration: 0.8, ease }}
       >
         <Link
-          href="/signup"
+          href="#about-challenge"
           className={cn(
             buttonVariants({ variant: "default" }),
             "w-full sm:w-auto text-background flex gap-2"
@@ -114,17 +121,36 @@ function HeroCTA() {
 function HeroImage() {
   return (
     <motion.div
-      className="relative mx-auto flex w-full items-center justify-center"
+      className="relative mx-auto flex w-full rounded-lg p-1 items-center justify-center mt-16"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.2, duration: 1, ease }}
     >
-      <HeroVideoDialog
+      <motion.img
+        // key={currentIndex}
+        src={"/atf-award-ceremony-2024.png"}
+        alt="atf-award-ceremony-2024"
+        // className="border rounded-lg shadow-lg max-w-screen-lg"
+        className="aspect-auto h-full w-full object-cover relative border rounded-lg shadow-lg"
+        initial={{ opacity: 0, scale: 0.98 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.98 }}
+        transition={{ duration: 0.25, ease: "easeOut" }}
+      />
+      {/* <HeroVideoDialog
         animationStyle="from-center"
         videoSrc="https://www.youtube.com/embed/qh3NGpYRG3I?si=4rb-zSdDkVK9qxxb"
         thumbnailSrc="/dashboard.png"
         thumbnailAlt="Hero Video"
-        className="border rounded-lg shadow-lg max-w-screen-lg mt-16"
+        className="border rounded-lg shadow-lg max-w-screen-lg mt-16=="
+      /> */}
+      <BorderBeam
+        size={400}
+        duration={12}
+        delay={9}
+        borderWidth={1.5}
+        colorFrom="hsl(var(--primary))"
+        colorTo="hsl(var(--primary)/0)"
       />
     </motion.div>
   );
@@ -133,12 +159,23 @@ function HeroImage() {
 export default function Hero() {
   return (
     <section id="hero">
-      <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 pb-10 sm:px-6 sm:pt-24 md:pt-32 lg:px-8 bg-yellow-100==">
-        {/* <HeroPill /> */}
+      <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 pb-20 sm:px-6 sm:pt-24 md:pt-32 lg:px-8 overflow-hidden">
+        {/* <div className="z-10 pointer-events-none absolute inset-x-0 -top-24 transform rotate-180 h-1/4 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4 border border-green-500"></div> */}
+        <FlickeringGrid
+          className="z-0 absolute inset-0= [mask:radial-gradient(circle_at_center,#fff_400px,transparent_0)]"
+          squareSize={10}
+          gridGap={10}
+          color="#000"
+          maxOpacity={0.06}
+          flickerChance={0.1}
+          height={800}
+          width={800}
+        />
+        <HeroPill />
         <HeroTitles />
         <HeroCTA />
-        {/* <HeroImage /> */}
-        {/* <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div> */}
+        <HeroImage />
+        <div className="z-10 pointer-events-none absolute inset-x-0 -bottom-12 lg h-1/4 bg-gradient-to-t from-background via-background to-transparent "></div>
       </div>
     </section>
   );

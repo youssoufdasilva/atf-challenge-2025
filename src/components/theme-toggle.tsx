@@ -8,6 +8,8 @@ import { useEffect } from "react";
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
 
+  return null;
+
   useEffect(() => {
     console.log("theme :: ", theme);
   }, [theme]);

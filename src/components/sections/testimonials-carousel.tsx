@@ -25,7 +25,7 @@ export default function Component() {
   return (
     <Section
       title="Testimonial Highlight"
-      subtitle="What our customers are saying"
+      subtitle="What our past teams are saying"
     >
       <Carousel>
         <div className="max-w-2xl mx-auto relative">
@@ -46,7 +46,7 @@ export default function Component() {
                       </h4>
                     </BlurFade>
                     <BlurFade delay={0.25 * 2} inView>
-                      <div className="mt-8">
+                      <div className="mt-8 hidden">
                         <Image
                           width={0}
                           height={40}
@@ -59,7 +59,7 @@ export default function Component() {
                         />
                       </div>
                     </BlurFade>
-                    <div className="">
+                    <div className="mt-8">
                       <BlurFade delay={0.25 * 3} inView>
                         <h4 className="text-1xl font-semibold my-2">
                           Leslie Alexander

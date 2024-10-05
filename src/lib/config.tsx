@@ -1,4 +1,4 @@
-import { Icons } from "@/components/icons";
+// import { Icons } from "@/components/icons";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
@@ -23,17 +23,17 @@ export const siteConfig = {
       label: "Participate",
     },
     {
-      href: "#about-Us",
+      href: "#about-us",
       label: "About Us",
     },
     {
       href: "#code-of-conduct",
       label: "Code of Conduct",
     },
-    {
-      href: "#support",
-      label: "Supporters",
-    },
+    // {
+    //   href: "#support",
+    //   label: "Supporters",
+    // },
   ],
   faqs: [
     {
