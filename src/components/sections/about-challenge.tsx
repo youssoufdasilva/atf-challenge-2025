@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import BlurFade from "@/components/magicui/blur-fade";
 import Section from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
@@ -40,7 +41,9 @@ export default function Component() {
 
       <p className="mt-6 text-lg leading-8 text-slate-600= mx-auto px-6">
         African Technology Forum Student challenge is not just a competition;
-        it's an opportunity to push the boundaries of what's possible in AI.
+        {
+          " it's an opportunity to push the boundaries of what's possible in AI. "
+        }
         This challenge is designed for students to bring together minds from
         diverse backgrounds to tackle real-world problems and create meaningful
         solutions in the field health, energy and other sector in africa.

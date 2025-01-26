@@ -87,7 +87,7 @@ function HeroTitles() {
       >
         Theme:{" "}
         <span className="font-medium italic">
-          Harnessing AI for Africa's Development
+          {"Harnessing AI for Africa's Development"}
         </span>
       </motion.p>
     </div>

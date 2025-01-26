@@ -17,12 +17,9 @@ export default function Component() {
       </p>
 
       <p className="mt-6 text-lg leading-8 text-slate-600= mx-auto px-6">
-        The objective of the Challenge is to bring out the innovative and
-        creative abilities in students and to encourage the application of
-        acquired knowledge and skills to solve real world problems. This year's
-        challenge will introduce students to AI technologies as one of the tools
-        for solving local problems. The 2024 ATF Challenge is being organized
-        with support from the OpenAI Foundation
+        {
+          "The objective of the Challenge is to bring out the innovative and creative abilities in students and to encourage the application of acquired knowledge and skills to solve real world problems. This year's challenge will introduce students to AI technologies as one of the tools for solving local problems."
+        }
       </p>
     </Section>
   );
