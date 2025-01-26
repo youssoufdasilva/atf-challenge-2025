@@ -25,6 +25,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link rel="icon" href="/atf-logo-vector.svg" type="image/svg+xml" />
       </head>
       <body
         className={cn(
