@@ -3,7 +3,7 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 import atfSvg from "@/assets/svgs/atfLogo";
 
 export const Icons = {
-  logo: atfSvg,
+  atfLogo: atfSvg,
   genericLogo: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -138,4 +138,12 @@ export const Icons = {
       <path d="M21 12a9 9 0 1 1-6.219-8.56" />
     </svg>
   ),
+};
+
+export const AftLogoWrapper = ({ className }: { className: string }) => {
+  return (
+    <span className={className}>
+      <Icons.atfLogo />
+    </span>
+  );
 };

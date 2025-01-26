@@ -1,5 +1,4 @@
-import { Icons } from "@/components/icons";
-import { buttonVariants } from "@/components/ui/button";
+import { AftLogoWrapper } from "@/components/icons";
 import {
   Drawer,
   DrawerContent,
@@ -8,7 +7,6 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { siteConfig } from "@/lib/config";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { IoMenuSharp } from "react-icons/io5";
 
@@ -26,7 +24,7 @@ export default function drawerDemo() {
               title="brand-logo"
               className="relative mr-6 flex items-center space-x-2"
             >
-              <Icons.logo className="w-auto h-[40px]" />
+              <AftLogoWrapper className="w-auto h-[40px]" />
               <span className="font-bold text-xl">{siteConfig.name}</span>
             </Link>
           </div>
@@ -60,7 +58,7 @@ export default function drawerDemo() {
               "w-full sm:w-auto text-background flex gap-2"
             )}
           >
-            <Icons.logo className="h-6 w-6" />
+            <AftLogoWrapper className="h-6 w-6" />
             Get Started for Free
           </Link>
         </DrawerFooter> */}

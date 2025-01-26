@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 
-// import { Icons } from "@/components/icons";
 import FlickeringGrid from "@/components/magicui/flickering-grid";
-// import HeroVideoDialog from "@/components/magicui/hero-video";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -110,7 +108,6 @@ function HeroCTA() {
             "w-full sm:w-auto text-background flex gap-2"
           )}
         >
-          {/* <Icons.logo className="h-6 w-6" /> */}
           Learn More
         </Link>
       </motion.div>

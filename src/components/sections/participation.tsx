@@ -65,7 +65,7 @@ export default function Component() {
         >
           {/* Deadline: February 11, 2024 at 11:59pm */}
           <span className="text-red-600">Deadline:</span>{" "}
-          <span className="text-green-600">To Be Confirmed!</span>
+          <span className="text-green-600">March 10, 2025 at 11:59pm</span>
         </h3>
         <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
           <Link
@@ -75,7 +75,6 @@ export default function Component() {
               "w-full sm:w-auto text-background flex gap-2"
             )}
           >
-            {/* <Icons.logo className="h-6 w-6" /> */}
             Register now
           </Link>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Drawer from "@/components/drawer";
-import { Icons } from "@/components/icons";
+import { AftLogoWrapper } from "@/components/icons";
 import Menu from "@/components/menu";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/lib/config";
@@ -40,9 +40,7 @@ export default function Header() {
           title="brand-logo"
           className="relative mr-6 flex items-center space-x-2"
         >
-          <span className="dark:bg-white p-1 rounded">
-            <Icons.logo className="w-auto h-[40px]" />
-          </span>
+          <AftLogoWrapper className="h-[60px]" />
 
           <span className="font-bold text-xl">{siteConfig.name}</span>
         </Link>
@@ -52,25 +50,6 @@ export default function Header() {
             <nav className="mr-10">
               <Menu />
             </nav>
-
-            <div className="gap-2 flex= hidden">
-              <Link
-                href="/login"
-                className={buttonVariants({ variant: "outline" })}
-              >
-                Login
-              </Link>
-              <Link
-                href="/signup"
-                className={cn(
-                  buttonVariants({ variant: "default" }),
-                  "w-full sm:w-auto text-background flex gap-2"
-                )}
-              >
-                <Icons.logo className="h-6 w-6" />
-                Get Started for Free
-              </Link>
-            </div>
           </div>
         </div>
         <div className="mt-2 cursor-pointer block lg:hidden">
@@ -79,7 +58,7 @@ export default function Header() {
       </div>
       <div
         className={cn(
-          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out bg-primary== bg-yellow-900 h-[2px] ",
+          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out bg-yellow-900 h-[2px] ",
           addBorder ? "opacity-25" : "opacity-0"
         )}
       />

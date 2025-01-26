@@ -8,14 +8,11 @@ import { useEffect } from "react";
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme();
 
-  return null;
-
   useEffect(() => {
-    console.log("theme :: ", theme);
+    if (theme !== undefined) return;
+    setTheme("light");
   }, [theme]);
 
-  // Don't show in production
-  if (process.env.NODE_ENV === "production") return null;
   return (
     <Button
       variant="ghost"

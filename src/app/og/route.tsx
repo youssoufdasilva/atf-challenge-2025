@@ -1,9 +1,11 @@
-import { Icons } from "@/components/icons";
+import { Icons, AftLogoWrapper } from "@/components/icons";
 import { siteConfig } from "@/lib/config";
 import { ImageResponse } from "next/og";
 import { NextRequest } from "next/server";
 
 // export const runtime = "edge";
+// commented out because I got this error when deploying to vercel:
+// Error: The Edge Function "og" size is 1.02 MB and your plan size limit is 1 MB. Learn More: https://vercel.link/edge-function-size
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
@@ -40,12 +42,7 @@ export async function GET(req: NextRequest) {
             top: "125px",
           }}
         >
-          <Icons.logo
-            style={{
-              width: "64px",
-              height: "64px",
-            }}
-          />
+          <AftLogoWrapper className="h-16 w-16" />
 
           <div
             style={{
