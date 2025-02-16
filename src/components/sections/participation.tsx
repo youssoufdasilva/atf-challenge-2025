@@ -1,7 +1,7 @@
 "use client";
 
 import Section from "@/components/section";
-import { cn } from "@/lib/utils";
+import { cn, formLink } from "@/lib/utils";
 // import { motion } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -69,7 +69,8 @@ export default function Component() {
         </h3>
         <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
           <Link
-            href="#participate"
+            // href="#participate"
+            href={formLink}
             className={cn(
               buttonVariants({ variant: "default" }),
               "w-full sm:w-auto text-background flex gap-2"

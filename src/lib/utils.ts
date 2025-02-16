@@ -11,6 +11,8 @@ export function absoluteUrl(path: string) {
   return `${process.env.NEXT_PUBLIC_APP_URL || siteConfig.url}${path}`;
 }
 
+export const formLink = "https://forms.gle/8KYBBSjvpwDVcDHr7";
+
 export function constructMetadata({
   title = siteConfig.name,
   description = siteConfig.description,
