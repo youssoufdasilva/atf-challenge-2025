@@ -65,7 +65,7 @@ export default function Component() {
         >
           {/* Deadline: February 11, 2024 at 11:59pm */}
           <span className="text-red-600">Deadline:</span>{" "}
-          <span className="text-green-600">March 10, 2025 at 11:59pm</span>
+          <span className="text-green-600">March 25, 2025 at 11:59pm</span>
         </h3>
         <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
           <Link
