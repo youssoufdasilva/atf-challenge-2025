@@ -97,8 +97,8 @@ export default function Component() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
         {conducts.map((conduct, index) => (
           <BlurFade key={index} delay={0.2 + index * 0.2} inView>
-            <Card className="bg-background== bg-neutral-100== dark:bg-neutral-900 border-none shadow-none">
-              <CardContent className="p-6= space-y-2">
+            <Card className="dark:bg-neutral-900 border-none shadow-none">
+              <CardContent className="space-y-2">
                 {/* <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                   <conduct.icon className="w-6 h-6 text-primary" />
                 </div> */}
