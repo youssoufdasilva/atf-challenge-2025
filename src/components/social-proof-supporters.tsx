@@ -21,7 +21,7 @@ export function SocialProofSupporters() {
                     <img
                       key={idx}
                       src={`/supporters/${logo}`}
-                      className="h-20= w-40 px-2 invert dark:invert-0"
+                      className="w-40 px-2 invert dark:invert-0"
                       alt={logo}
                     />
                   );
@@ -30,7 +30,7 @@ export function SocialProofSupporters() {
                     <img
                       key={idx}
                       src={`/supporters/${logo}`}
-                      className="h-20= w-40 px-2 dark:brightness-0= dark:invert"
+                      className="w-40 px-2 dark:invert"
                       alt={logo}
                     />
                   );
