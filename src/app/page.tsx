@@ -34,7 +34,7 @@ export default function Home() {
       <SocialProofPartner />
       <SocialProofSupporters />
       <CTA />
-      <SocialProof />
+      {/* <SocialProof /> */}
       <Footer />
     </main>
   );
