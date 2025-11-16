@@ -1,7 +1,7 @@
 "use client";
 
 import Section from "@/components/section";
-import { cn } from "@/lib/utils";
+import { cn, formLink } from "@/lib/utils";
 // import { motion } from "framer-motion";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -62,11 +62,12 @@ export default function Component() {
         <h3 className="hidden mx-auto pt-8 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl text-red-600">
           {/* Deadline: February 11, 2024 at 11:59pm */}
           <span className="text-red-600">Deadline:</span>{" "}
-          <span className="text-green-600">March 10, 2025 at 11:59pm</span>
+          <span className="text-green-600">March 25, 2025 at 11:59pm</span>
         </h3>
         <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
           <Link
-            href="#participate"
+            // href="#participate"
+            href={formLink}
             className={cn(
               buttonVariants({ variant: "default" }),
               "w-full sm:w-auto text-background flex gap-2"
