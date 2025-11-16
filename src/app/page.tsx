@@ -19,18 +19,11 @@ export default function Home() {
       <CodeOfConduct />
       <Participation />
 
-      {/* <Features /> */}
-      {/* <Testimonials /> */}
-      {/* <FAQ /> */}
-      {/* <Blog /> */}
-
-      {/* <TestimonialsCarousel /> */}
       <AboutUs />
       <Logos2 />
       <SocialProofPartner />
       <SocialProofSupporters />
       <CTA />
-      {/* <SocialProof /> */}
       <Footer />
     </main>
   );

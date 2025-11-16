@@ -68,6 +68,7 @@ function OurHistorySection() {
     <Section title="Our History" className="bg-background">
       <div className="mt-8 max-w-4xl mx-auto">
         <p className="text-muted-foreground leading-relaxed text-lg">
+          {`
           African Technology Forum was founded by students in 1988 at the
           Massachusetts Institute of Technology. They found at the time that
           Africans were largely absent from scientific writings, even when
@@ -76,6 +77,7 @@ function OurHistorySection() {
           Africa's contributions. The situation is not very different today, and
           the need to place Africans in Africa's development story remains as
           great as ever.
+          `}
         </p>
       </div>
     </Section>
