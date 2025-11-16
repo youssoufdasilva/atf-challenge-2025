@@ -168,7 +168,7 @@ export default function Hero() {
           height={800}
           width={800}
         />
-        <HeroPill />
+        {/* <HeroPill /> */}
         <HeroTitles />
         <HeroCTA />
         <HeroImage />

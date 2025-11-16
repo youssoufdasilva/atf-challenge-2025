@@ -3,12 +3,16 @@ import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
 import Section from "@/components/section";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { AftLogoWrapper } from "@/components/icons";
 
 export default function Home() {
   return (
     <main>
       {/* <LandingHeader /> */}
       <Header />
+      <span className="block text-center w-10/12 sm:w-3/5 md:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto bg-white rounded-3xl p-4 mt-12">
+        <AftLogoWrapper className="" />
+      </span>
       <WhatWeDoSection />
       <OurHistorySection />
       <Footer />
