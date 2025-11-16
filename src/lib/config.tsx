@@ -19,21 +19,21 @@ export const siteConfig = {
   },
   header: [
     {
-      href: "#participate",
+      href: "/#participate",
       label: "Participate",
     },
     {
-      href: "#about-us",
+      href: "/#about-us",
       label: "About Us",
     },
     {
-      href: "#code-of-conduct",
+      href: "/#code-of-conduct",
       label: "Code of Conduct",
     },
-    // {
-    //   href: "#support",
-    //   label: "Supporters",
-    // },
+    {
+      href: "/about-org",
+      label: "About Org",
+    },
   ],
   faqs: [
     {

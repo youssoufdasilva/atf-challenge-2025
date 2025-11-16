@@ -59,10 +59,7 @@ export default function Component() {
           level of experience in a general-purpose programming language like
           Python, Ruby, or C++.
         </p>
-        <h3
-          // className="text-center mx-auto mt-6 max-w-xs text-xl font-semibold sm:max-w-none sm:text-2xl md:text-3xl"
-          className="mx-auto pt-8 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl text-red-600"
-        >
+        <h3 className="hidden mx-auto pt-8 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl text-red-600">
           {/* Deadline: February 11, 2024 at 11:59pm */}
           <span className="text-red-600">Deadline:</span>{" "}
           <span className="text-green-600">March 10, 2025 at 11:59pm</span>
